@@ -1,0 +1,103 @@
+---
+layout: default
+---
+
+<section class="greeting">
+    <h1 class="nightowl-daylight">
+        <img id="logo" src="/assets/wgsl-analyzer.svg" alt="wgsl analyzer" />
+    </h1>
+
+    <p>
+        Bringing a <em>great</em> IDE experience<br />
+        to the WGSL programming language.
+    </p>
+
+    <a class="source" href="https://github.com/wgsl-analyzer/wgsl-analyzer">
+        <i class="fa fa-github" aria-hidden="true"></i> Source
+    </a>
+</section>
+
+<section class="paragraph lead">
+    <h2>About</h2>
+    <p>
+        wgsl-analyzer is an implementation of
+        <a href="https://microsoft.github.io/language-server-protocol/"
+            >Language Server Protocol</a
+        >
+        for the <a href="https://www.wgsl-analyzer.org/">WGSL</a> programming
+        language. It provides features like completion and goto definition for
+        many code editors, including VS Code, Emacs and Vim.
+    </p>
+</section>
+
+<section class="paragraph lead">
+    <h2>Quick Start</h2>
+
+    <p>
+        For VS Code, install
+        <a
+            href="https://marketplace.visualstudio.com/items?itemName=wgsl-analyzer.wgsl-analyzer"
+            >wgsl-analyzer</a
+        >
+        extension from the marketplace. Prebuilt language server binaries for
+        Windows, Linux and Mac are available on the
+        <a href="https://github.com/wgsl-analyzer/wgsl-analyzer/releases"
+            >releases</a
+        >
+        page.
+    </p>
+
+    <p>
+        Instructions for other editors, building from source and the list of
+        features are found in
+
+        <a href="/book/"><strong>the manual</strong></a
+        >.
+    </p>
+
+    <p>
+        You can ask questions about using wgsl-analyzer in the wgsl-analyzer
+        discord:
+        <a href="https://discord.gg/3QUGyyz984"
+            ><strong>wgsl-analyzer</strong></a
+        >.
+    </p>
+</section>
+
+<section class="paragraph lead">
+    <h2>Support</h2>
+
+    <p class="lead">
+        wgsl-analyzer is a free and open source project, developed with support
+        from individuals. Donate to wgsl-analyzer on
+        <a href="https://opencollective.com/wgsl-analyzer/">Open Collective</a>.
+    </p>
+</section>
+
+<section>
+    <h2><span class="post-first-col">Latest News</span></h2>
+
+    <div class="post">
+        {% assign post = site.categories.thisweek.first %}
+        <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"
+            >{{ post.title }}</a
+        >
+    </div>
+
+    <a class="all-posts-link" href="/thisweek">All news</a>
+</section>
+
+<section>
+    <h2><span class="post-first-col">Latest Post</span></h2>
+
+    <div class="post">
+        {% assign post = site.categories.blog.first %}
+        <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"
+            >{{ post.title }}</a
+        >
+    </div>
+
+    <a class="all-posts-link" href="/blog">All posts</a>
+</section>

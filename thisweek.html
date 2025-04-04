@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<h2>This Week In wgsl-analyzer</h2>
+
+<ul class="post-list">
+    {% for post in site.categories.thisweek %}
+    <li class="post">
+        <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"
+            >{{ post.title }}</a
+        >
+    </li>
+    {% endfor %}
+</ul>
