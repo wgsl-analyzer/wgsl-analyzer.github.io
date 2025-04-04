@@ -1,0 +1,23 @@
+= Changelog #0
+:sectanchors:
+:experimental:
+:page-layout: post
+
+Commit: commit:94e408392b9e151e650eb2f5e203e37e97389730[] +
+Release: release:2025-04-04[] (`TBD`)
+
+== New Features
+
+
+
+== Fixes
+
+
+
+== Internal Improvements
+
+
+
+== Others
+
+See https://github.com/wgsl-analyzer/wgsl-analyzer/pulls?q=is%3Apr+is%3Aclosed
