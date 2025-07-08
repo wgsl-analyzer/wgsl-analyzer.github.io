@@ -1,0 +1,27 @@
+root = true
+
+charset = utf-8
+end_of_line = lf
+indent_size = tab
+indent_style = space
+insert_final_newline = true
+spelling_language = en-us
+tab_width = 4
+trim_trailing_whitespace = true
+
+[*.toml]
+indent_size = 2
+
+[*.md]
+indent_size = 2
+
+[*.{yaml,yml}]
+indent_size = 2
+quote_type = single
+spaces_around_brackets = both
+
+[*.{json,jsonc}]
+
+[*.{html,htm}]
+
+[*.adoc]

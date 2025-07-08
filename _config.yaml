@@ -1,19 +1,19 @@
 title: wgsl-analyzer
-description: "wgsl-analyzer: building a better WGSL IDE"
-baseurl: ""
-url: "https://wgsl-analyzer.github.io/"
+description: 'wgsl-analyzer: building a better WGSL IDE'
+baseurl: ''
+url: https://wgsl-analyzer.github.io
 github_username: wgsl-analyzer
 exclude:
-    - vendor
-    - generated_features.adoc
+  - vendor
+  - generated_features.adoc
 
 plugins:
-    - jekyll-asciidoc
-    - jekyll-redirect-from
+  - jekyll-asciidoc
+  - jekyll-redirect-from
 
 asciidoctor:
-    attributes:
-        - icons=font
-        - source-highlighter=rouge
-        - source-linenums-option=_
-        - rouge-style=github
+  attributes:
+    - icons=font
+    - source-highlighter=rouge
+    - source-linenums-option=_
+    - rouge-style=github

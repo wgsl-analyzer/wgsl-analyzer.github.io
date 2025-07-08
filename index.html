@@ -21,9 +21,7 @@ layout: default
     <h2>About</h2>
     <p>
         wgsl-analyzer is an implementation of
-        <a href="https://microsoft.github.io/language-server-protocol/"
-            >Language Server Protocol</a
-        >
+        <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol</a>
         for the <a href="https://www.wgsl-analyzer.org/">WGSL</a> programming
         language. It provides features like completion and goto definition for
         many code editors, including VS Code, Emacs and Vim.
@@ -35,32 +33,25 @@ layout: default
 
     <p>
         For VS Code, install
-        <a
-            href="https://marketplace.visualstudio.com/items?itemName=wgsl-analyzer.wgsl-analyzer"
-            >wgsl-analyzer</a
-        >
-        extension from the marketplace. Prebuilt language server binaries for
-        Windows, Linux and Mac are available on the
-        <a href="https://github.com/wgsl-analyzer/wgsl-analyzer/releases"
-            >releases</a
-        >
+        <a href="https://marketplace.visualstudio.com/items?itemName=wgsl-analyzer.wgsl-analyzer">wgsl-analyzer</a>
+        extension from the marketplace.
+        Prebuilt language server binaries for Windows, Linux and Mac are available on the
+        <a href="https://github.com/wgsl-analyzer/wgsl-analyzer/releases">releases</a>
         page.
     </p>
 
     <p>
         Instructions for other editors, building from source and the list of
         features are found in
-
-        <a href="/book/"><strong>the manual</strong></a
-        >.
+        <a href="/book/"><strong>the manual</strong></a>.
     </p>
 
     <p>
         You can ask questions about using wgsl-analyzer in the wgsl-analyzer
         discord:
-        <a href="https://discord.gg/3QUGyyz984"
-            ><strong>wgsl-analyzer</strong></a
-        >.
+        <a href="https://discord.gg/3QUGyyz984">
+            <strong>wgsl-analyzer</strong>
+        </a>.
     </p>
 </section>
 
@@ -80,9 +71,7 @@ layout: default
     <div class="post">
         {% assign post = site.categories.thisweek.first %}
         <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"
-            >{{ post.title }}</a
-        >
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </div>
 
     <a class="all-posts-link" href="/thisweek">All news</a>
@@ -94,9 +83,7 @@ layout: default
     <div class="post">
         {% assign post = site.categories.blog.first %}
         <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"
-            >{{ post.title }}</a
-        >
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </div>
 
     <a class="all-posts-link" href="/blog">All posts</a>
