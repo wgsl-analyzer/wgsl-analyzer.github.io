@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wgsl-analyzer</title>
+    <description>wgsl-analyzer: building a better WGSL IDE</description>
+    <link>https://wgsl-analyzer.github.io/</link>
+    <atom:link href="https://wgsl-analyzer.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 16 Aug 2025 21:32:52 +0000</pubDate>
+    <lastBuildDate>Sat, 16 Aug 2025 21:32:52 +0000</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+  </channel>
+</rss>
