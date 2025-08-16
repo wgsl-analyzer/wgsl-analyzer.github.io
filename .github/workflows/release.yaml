@@ -1,22 +1,23 @@
-name: CI
+name: Release
 on:
     push:
         branches:
             - src
     schedule:
         # Every day, to pick up the latest wgsl-analyzer repo changes.
-        - cron: "0 0 * * *"
+        - cron: '0 0 * * *'
     workflow_dispatch:
 
 jobs:
-    CI:
+    deploy:
+        name: Deploy MDBook
         runs-on: ubuntu-latest
 
         steps:
             - uses: actions/checkout@v4
             - uses: ruby/setup-ruby@v1
               with:
-                  ruby-version: "2.7"
+                  ruby-version: '2.7'
 
             - run: bundle install && bundle exec jekyll build
 
@@ -33,9 +34,9 @@ jobs:
               uses: GuillaumeFalourd/clone-github-repo-action@v2.3
               with:
                   depth: 1
-                  branch: "main"
-                  owner: "wgsl-analyzer"
-                  repository: "wgsl-analyzer"
+                  branch: main
+                  owner: wgsl-analyzer
+                  repository: wgsl-analyzer
 
             - name: Build generated.md files
               run: cd wgsl-analyzer && cargo xtask codegen
