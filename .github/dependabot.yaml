@@ -9,3 +9,4 @@ updates:
       prefix: internal
     cooldown:
       default-days: 7
+    target-branch: src
