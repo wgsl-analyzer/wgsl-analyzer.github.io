@@ -15,9 +15,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2.3"
+
+      - name: Install stable Rust toolchain
+        uses: dtolnay/rust-toolchain@2c7215f132e9ebf062739d9130488b56d53c060c
+        with:
+          toolchain: stable
 
       - run: bundle install && bundle exec jekyll build
 
