@@ -34,8 +34,12 @@ jobs:
       - name: Install mdbook
         uses: taiki-e/install-action@9983c65e42da123ff25d1f78505eb6de315aa172 # v2.87.20
         with:
-          # do not pin this to a specific version, since we are building `mdbook-toc` below
-          tool: mdbook@0.4
+          tool: mdbook@0.5.4
+
+      - name: Install mdbook-toc
+        uses: taiki-e/install-action@9983c65e42da123ff25d1f78505eb6de315aa172 # v2.87.20
+        with:
+          tool: mdbook-toc@0.15.4
 
       # we cannot use `taiki-e/install-action` because the latest release is ancient
       # no `--locked` so that it picks up a matching `mdbook`
