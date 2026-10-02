@@ -49,12 +49,7 @@ jobs:
       - run: cargo install mdbook-toc
 
       - name: Clone the wgsl-analyzer repository
-        uses: GuillaumeFalourd/clone-github-repo-action@19817562c346ff60f9935158dede6c5ece8fd0ac # v2.3
-        with:
-          depth: 1
-          branch: main
-          owner: wgsl-analyzer
-          repository: wgsl-analyzer
+        run: git clone --depth 1 https://github.com/wgsl-analyzer/wgsl-analyzer
 
       - name: Build generated.md files
         run: cd wgsl-analyzer && cargo xtask codegen
