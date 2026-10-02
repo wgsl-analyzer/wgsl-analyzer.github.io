@@ -1,14 +1,9 @@
 [default]
-extend-ignore-re = [
-    "JodChild",
-    "JodGroupChild",
-    "Lukas Wirth",
-    "\\*\\*S\\*\\*tructural \\*\\*S\\*\\*earch \\*\\*R\\*\\*eplace",
-]
+extend-ignore-re = []
 
 [files]
 extend-exclude = [
-    "css/*.min.css",
-    "css/*.css.map",
-    "fonts/*",
+  "css/*.min.css",
+  "css/*.css.map",
+  "fonts/*",
 ]
